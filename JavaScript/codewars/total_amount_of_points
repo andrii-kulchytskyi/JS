@@ -1,0 +1,18 @@
+function points(games) {
+  let scores = 0;
+  for(let i = 0; i<games.length;i++){
+    let game = games[i].split(":");
+    if(game[0]> game[1]){
+      scores+=3;
+    } else if( game[0]==game[1]){
+      scores++;
+    } else if(game[0]<game[1]){
+      
+    }
+  }
+  return scores;
+}
+
+const points=games=>games.reduce((output,current)=>{
+    return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+  },0)
