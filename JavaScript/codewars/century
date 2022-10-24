@@ -1,0 +1,9 @@
+function century(year) {
+  // Finish this :)
+    let countCentury = 0;
+  while(year>0){
+    year = year - 100;
+    countCentury++;
+  }
+  return countCentury;
+}
