@@ -1,0 +1,6 @@
+function litres(time) {
+  let total = 0;
+  let perHour = 0.5;
+  total = Math.floor(time*0.5);
+  return total;
+}
