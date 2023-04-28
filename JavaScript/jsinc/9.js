@@ -1,7 +1,7 @@
 const foo = () => {
-
+    return () => {
+        console.log("Hello")
+    }
 }
+foo()()
 
-function noWay() {
-
-}
