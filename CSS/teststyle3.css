@@ -4,17 +4,29 @@ h1 {
 
 h2 {
     text-align: center;
+    font-size: 50px;
+    text-align: center;
 }
 
 table {
-    width: 300px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+}
+td{
+    font-weight: bold;
 }
 
 th {
     text-align: left;
+    font-style: italic;
 }
 
 p {
     width: 300px;
     text-align: justify;
+    font-family: "Academy Engraved LET";
+}
+th{
+    font-weight: normal;
 }
