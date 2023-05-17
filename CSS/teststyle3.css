@@ -1,32 +1,15 @@
 h1 {
-    text-align: right;
+    color: blue;
+    text-align: center;
 }
 
 h2 {
+    color: green;
     text-align: center;
-    font-size: 50px;
-    text-align: center;
-}
-
-table {
-    width: 500px;
-    height: 300px;
-    text-align: center;
-}
-td{
-    font-weight: bold;
-}
-
-th {
-    text-align: left;
-    font-style: italic;
 }
 
 p {
-    width: 300px;
+    text-indent: 50px;
     text-align: justify;
-    font-family: "Academy Engraved LET";
-}
-th{
-    font-weight: normal;
+    font: 30px/60px Ariel
 }
