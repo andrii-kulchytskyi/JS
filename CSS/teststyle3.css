@@ -1,15 +1,12 @@
-h1 {
-    color: blue;
+h1, h2, h3 {
     text-align: center;
 }
 
 h2 {
-    color: green;
-    text-align: center;
+    color: blue;
 }
 
-p {
-    text-indent: 50px;
-    text-align: justify;
-    font: 30px/60px Ariel
+h3 {
+    font-size: 16px;
+    color: red;
 }
