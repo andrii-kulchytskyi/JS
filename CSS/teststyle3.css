@@ -1,4 +1,12 @@
 
-li > b {
+.f {
     color: green;
+}
+
+.s {
+    color: red;
+}
+
+.t {
+    color: gold;
 }
