@@ -45,17 +45,52 @@
 //
 // console.log('x' in obj);
 
-let calculator = {
-    // ... ваш код ...
-    sum:()=>{
-        let a;
-        let b;
-        alert(a)
-        alert(b)
-    },
+// let calculator = {
+//     // ... ваш код ...
+//     read() {
+//         this.a = +prompt('a?', 0)
+//         this.b = +prompt('b?', 0)
+//     },
+//     sum() {
+//         return this.a + this.b
+//     },
+//     mul(){
+//         return this.a * this.b
+//     }
+//
+// };
+//
+// calculator.read();
+// alert(calculator.sum());
+// alert(calculator.mul());
 
-};
+// console.log( typeof {x: 1, y: 2, z: 3} );
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
+// let obj = {x: 1, y: 2, z: 3};
+// console.log( typeof obj['x'] );
+
+// let ladder = {
+//     step: 0,
+//     up() {
+//         return this.step++;
+//     },
+//     down() {
+//         return this.step--;
+//     },
+//     showStep: function () { // показывает текущую ступеньку
+//         alert(this.step);
+//     }
+// };
+let obj = {}
+function A() {
+    return b
+}
+
+function B() {
+    return a
+}
+
+let a = new A();
+let b = new B();
+
+console.log(a===b)
