@@ -81,16 +81,23 @@
 //         alert(this.step);
 //     }
 // };
-let obj = {}
-function A() {
-    return b
-}
+// let obj = {}
+// function A() {
+//     return b
+// }
+//
+// function B() {
+//     return a
+// }
+//
+// let a = new A();
+// let b = new B();
+//
+// console.log(a===b)
 
-function B() {
-    return a
-}
 
-let a = new A();
-let b = new B();
+let arr1 = [1, 2, 3];
+let arr2 = arr1;
 
-console.log(a===b)
+arr1[0] = 'a';
+console.log(arr2);
