@@ -112,5 +112,5 @@
 // console.log(arr2);
 
 const arr = ['a', 'b', 'c'];
-arr[1] = '!';
+arr = ['a', 'b', 'c'];
 console.log(arr);
