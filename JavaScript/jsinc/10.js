@@ -110,7 +110,21 @@
 // arr2[0] = 'b';
 //
 // console.log(arr2);
+//
+// let obj = {x: 1, y: 2, z: 3};
+//
+// console.log(obj.toArray().length);
 
-const arr = ['a', 'b', 'c'];
-arr = ['a', 'b', 'c'];//
-console.log(arr);
+function Accumulator(value) {
+    this.read = function () {
+        this.newVal = 0
+        return value += this.newVal
+    }
+}
+
+let accumulator = new Accumulator(1); // начальное значение 1
+
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+accumulator.read(); // прибавляет введённое пользователем значение к текущему значению
+
+alert(accumulator.value); // выведет сумму этих значений
