@@ -33,8 +33,12 @@
 //
 // Даны два числа. Проверьте, что первые цифры этих чисел совпадают.
 
-let number1 = 10222
-let number2 = 10222
-let str1 = number1.toString().split('')
-let str2 = number2.toString().split('')
-console.log(str1[0] === str2[0])
+// let number1 = 10222
+// let number2 = 10222
+// let str1 = number1.toString().split('')
+// let str2 = number2.toString().split('')
+// console.log(str1[0] === str2[0])
+
+let num1 = -10;
+let num2 = -10;
+console.log(num1 >= 0 || num2 >= 0)

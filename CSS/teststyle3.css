@@ -1,12 +1,3 @@
-
-.f {
-    color: green;
-}
-
-.s {
-    color: red;
-}
-
-.t {
-    color: gold;
+.block .header {
+    font-family: Arial;
 }
