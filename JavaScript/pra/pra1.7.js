@@ -12,6 +12,8 @@ console.log('abcde'.split(''))
 //
 //     12345
 // Получите массив цифр этого числа.
+console.log('12345'.split(''))
+
 //
 // №3
 //
@@ -19,6 +21,7 @@ console.log('abcde'.split(''))
 //
 //     12345
 // Переверните его:
+console.log('12345'.split('').reverse().join(''))
 //
 //     54321
 // №4
@@ -27,3 +30,4 @@ console.log('abcde'.split(''))
 //
 //     12345
 // Найдите сумму цифр этого числа.
+console.log('12345'.split('').reduce((a, b) => +a + +b))
