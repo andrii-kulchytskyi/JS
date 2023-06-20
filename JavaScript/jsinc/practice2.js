@@ -68,8 +68,39 @@
 // console.log(arr)
 // Узнайте длину следующего массива:
 
-    let arr = [];
+//     let arr = [];
+//
+// arr[3] = 'a';
+// arr[8] = 'b';
+// console.log(arr.length)
+//
+// №1⊗jsPmCdExND
+//
+// Дано целое число. Напишите условие, которое проверит, равна ли последняя цифра этого числа нулю.
 
-arr[3] = 'a';
-arr[8] = 'b';
-console.log(arr.length)
+
+let num = 12345;
+let l = num.toString().split('').pop()
+console.log(l)
+if (l === '0') {
+    console.log('yes')
+} else {
+    console.log('no')
+}
+//
+// №2⊗jsPmCdExND
+//
+
+// Пусть в переменной num хранится число. Определите, четное число или нет. Число будет четным, если последний символ \
+// равен 0, 2, 4, 6 или 8, и нечетным в противном случае.
+
+// let num = 12345;
+// let l = num.toString().split('').pop()
+// console.log(l)
+if (l % 2 === 0) {
+    console.log('yes')
+} else {
+    console.log('no')
+}
+
+
