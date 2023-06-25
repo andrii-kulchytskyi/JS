@@ -32,3 +32,4 @@ let res1 = arrayNum.map(function (elem) {
     }
 );
 console.log(res1);
+
