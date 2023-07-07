@@ -1,4 +1,3 @@
-// // // Уровень 2.1 задачника JavaScript
 // // // №1
 // // //
 // // // Дана некоторая строка. Найдите позицию первого нуля в строке.
@@ -237,11 +236,275 @@
 // и на само себя, и не делится на другие числа.
 
 
-let num = 7
-let flag = true
-for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-        flag = false
+// let num = 7
+// let flag = true
+// for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//         flag = false
+//     }
+// }
+// console.log(flag ? 'Простое' : 'Не простое')
+// let arr = [10, 20, 30, 40, 21, 32, 51];
+// let total = 0
+//
+// // Возьмите из этого массива те элементы, у которых первая цифра 1 или 2, и найдите их сумму.
+// for (let i = 0; i < arr.length; i++) {
+//     let str = String(arr[i])
+//     if (str[0] === '1' || str[0] === '2') {
+//         total += arr[i]
+//     }
+// }
+// console.log(total)
+// Исправьте ошибки, допущенные в следующем коде:
+
+// let obj = {a: 10, b: 20, c: 30, d: 40, e: 50};
+// let sum = 0;
+//
+// for (let key in obj) {
+//     if (key.startsWith('1') || key.startsWith('2')) {
+//         sum += obj[key];
+//     }
+// }
+//
+// console.log(sum);
+
+
+// №1⊗jsPmLpMst
+//
+// Код должен вывести числа от 0 до 10:
+//
+// for (let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+// №2⊗jsPmLpMst
+//
+// Код должен вывести числа от 10 до 0:
+//
+// for (let i = 10; i >= 0; i--) {
+//     console.log(i);
+// }
+// №3⊗jsPmLpMst
+//
+// Код должен вывести числа от 10 до 0:
+//
+// for (let i = 10; i >=0; i--) {
+//     console.log(i);
+// }
+// №4⊗jsPmLpMst
+//
+// Код должен вывести числа от 0 до 10:
+//
+// let i = 0;
+//
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+// №5⊗jsPmLpMst
+//
+// Код должен найти сумму целых чисел от 1 до 10:
+//
+// let res = 0;
+//
+// for (let i = 1; i <= 10; i++) {
+//     res += i;
+// }
+//
+// console.log(res);
+// №6⊗jsPmLpMst
+//
+// Код должен найти произведение целых чисел от 1 до 10:
+//
+// let res = 1;
+//
+// for (let i = 1; i <= 10; i++) {
+//     res *= i;
+// }
+// //
+// console.log(res);
+// №7⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива:
+//
+//     let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+//
+// for (let elem of arr) {
+//     sum += +elem;
+// }
+//
+// console.log(sum); // должно вывести 15
+// №8⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива:
+//
+//     let arr = ['1', '2', '3', '4', '5'];
+// let sum = '';
+//
+// for (let elem of arr) {
+//     sum += +elem;
+// }
+//
+// console.log(sum); // должно вывести 15
+// №9⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива:
+//
+
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+//
+// for (let elem of arr) {
+//     sum = +elem;
+// }
+// //
+// console.log(sum); // должно вывести 15
+// №10⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива, однако, всегда выводит NaN:
+//
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+//
+// for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+// }
+//
+// console.log(sum); // почему-то выводит NaN
+// №11⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива:
+//
+// let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+//
+// for (let i = 0; i <= arr.length - 1; i++) {
+//     sum += +arr[i];
+// }
+//
+// console.log(sum); // почему-то выводит не 15
+// №12⊗jsPmLpMst
+//
+// Код должен найти сумму элементов массива:
+//
+//     let arr = ['1', '2', '3', '4', '5'];
+// let sum = 0;
+//
+// for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+// }
+// //
+// console.log(sum); // почему-то выводит не 15
+// №13⊗jsPmLpMst
+//
+// Код должен возвести в квадрат каждый элемент массива:
+//
+//     let arr = [1, 2, 3, 4, 5];
+//
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i] * arr[i];
+// }
+//
+// console.log(arr);
+// №14⊗jsPmLpMst
+//
+// Код должен заполнить массив числами от 1 до 5:
+//
+// let arr=[];
+//
+// for (let i = 1; i <= 5; i++) {
+//     arr.push(i);
+// }
+//
+// console.log(arr);
+// №15⊗jsPmLpMst
+//
+// Код должен найти сумму элементов объекта:
+
+// let obj = {a: 1, b: 2, c: 3};
+// let sum = 0;
+//
+// for (let elem in obj) {
+//     sum += obj[elem];
+// }
+//
+// console.log(sum);
+// №16⊗jsPmLpMst
+//
+// Код должен найти сумму элементов объекта:
+//
+// let obj = {a: 1, b: 2, c: 3};
+// let sum = 0;
+//
+// for (let key in obj) {
+//     sum += obj[key];
+// }
+//
+// console.log(sum);
+// №17⊗jsPmLpMst
+//
+// Код должен проверить, есть ли в массиве число 3 или нет:
+//
+// let arr = [1, 2, 3, 4, 5];
+// let res = '';
+//
+// for (let elem of arr) {
+//     if (arr[elem] === 3) {
+//         res = '+++';
+//         break;
+//     } else {
+//         res = '---';
+//
+//     }
+// }
+// //
+// console.log(res);
+// №18⊗jsPmLpMst
+//
+// Код должен заполнить массив числами от 1 до 5:
+//
+// let arr = []
+// for (let i = 1; i <= 5; i++) {
+//     arr.push(i);
+// }
+//
+// console.log(arr);
+// №19⊗jsPmLpMst
+//
+// Код должен проверить, есть ли в массиве число 3 или нет:
+//
+// let arr = [1, 2, 3, 4, 5];
+// let res = false;
+//
+// for (let elem of arr) {
+//     if (elem === 3) {
+//          res = true;
+//         break;
+//     }
+// }
+// //
+// console.log(res);
+// №20⊗jsPmLpMst
+//
+// Код должен вывести только четные элементы из массива:
+//
+//     let arr = [1, 2, 3, 4, 5];
+//
+// for (let elem of arr) {
+//     if (elem % 2 === 0) {
+//         console.log(elem);
+//     }
+// }
+// №21⊗jsPmLpMst
+//
+// Код должен записать в новый массив только нечетные элементы старого массива:
+//
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let res = []
+for (let elem of arr) {
+    if (elem % 2 !== 0) {
+        res.push(elem);
     }
 }
-console.log(flag ? 'Простое' : 'Не простое')
+
+console.log(res);
