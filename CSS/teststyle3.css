@@ -1,3 +1,5 @@
-.bbb .zzz {
-    color: red;
+#block p.bbb {
+    color: darkred;
 }
+
+
