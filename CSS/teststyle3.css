@@ -1,5 +1,3 @@
-#block p.bbb {
-    color: darkred;
+main * > p {
+    color: red;
 }
-
-
