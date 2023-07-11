@@ -518,9 +518,17 @@
 
 let arr = [[1, 2], [3, 4], [5, 6]];
 let tot = 0
-for (let i = 0; i < ; i++) {
-    
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[0].length; j++) {
+        tot += arr[i][j]
+    }
 }
 console.log(tot)
 
+// Basic regex tasks. Write a function that takes in a numeric code of any length. The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.
+//
+//     You can assume the input will always be a number.
+function validateCode(code) {
+//your code here
 
+}
