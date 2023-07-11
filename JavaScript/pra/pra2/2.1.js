@@ -499,12 +499,28 @@
 //
 // Код должен записать в новый массив только нечетные элементы старого массива:
 //
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let res = []
-for (let elem of arr) {
-    if (elem % 2 !== 0) {
-        res.push(elem);
-    }
-}
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let res = []
+// for (let elem of arr) {
+//     if (elem % 2 !== 0) {
+//         res.push(elem);
+//     }
+// }
+// console.log(res);
 
-console.log(res);
+// let arr = [
+//     ['a', 'b', 'c'],
+//     ['d', 'e', 'f'],
+//     ['g', 'h', 'i'],
+//     ['j', 'k', 'l'],
+// ];
+// console.log(arr[3][2]+arr[1][1])
+
+let arr = [[1, 2], [3, 4], [5, 6]];
+let tot = 0
+for (let i = 0; i < ; i++) {
+    
+}
+console.log(tot)
+
+
