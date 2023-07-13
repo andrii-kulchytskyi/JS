@@ -516,19 +516,204 @@
 // ];
 // console.log(arr[3][2]+arr[1][1])
 
-let arr = [[1, 2], [3, 4], [5, 6]];
-let tot = 0
-for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[0].length; j++) {
-        tot += arr[i][j]
-    }
-}
-console.log(tot)
-
-// Basic regex tasks. Write a function that takes in a numeric code of any length. The function should check if the code begins with 1, 2, or 3 and return true if so. Return false otherwise.
+// let arr = [[1, 2], [3, 4], [5, 6]];
+// let tot = 0
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[0].length; j++) {
+//         tot += arr[i][j]
+//     }
+// }
+// console.log(tot)
 //
-//     You can assume the input will always be a number.
-function validateCode(code) {
-//your code here
 
+// let arr = [
+//     [
+//         [1, 2],
+//         [3, 4],
+//     ],
+//     [
+//         [5, 6],
+//         [7, 8],
+//     ],
+// ];
+// let t = 0
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[0].length; j++) {
+//         for (let k = 0; k < arr[1].length; k++) {
+//             t += arr[i][j][k]
+//         }
+//     }
+// }
+// console.log(t)
+
+
+// let arr = [[1, 2, 3, [4, 5, [6, 7]]], [8, [9, 10]]];
+// console.log(arr[0][0]+arr[0][1]+arr[0][2]+arr[0][3][0]+arr[0][3][1]+arr[0][3][2][0]
+// +arr[0][3][2][1]+arr[1][0]+arr[1][1][0]+arr[1][1][1])
+
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// let total = 0
+//
+// for (const arrElement of arr) {
+//     for (const number of arrElement) {
+//         total += number
+//
+//     }
+// }
+// console.log(total)
+
+// let arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+// let total = 0
+// for (const arrElement of arr) {
+//     for (const arrElementElement of arrElement) {
+//         for (const number of arrElementElement) {
+//             total += number
+//         }
+//
+//     }
+//
+// }
+// console.log(total)
+
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         console.log(arr[i][j])
+//     }
+// }
+// let arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]];
+// let total = 0
+//
+// // for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr[i].length; j++) {
+//         for (let k = 0; k < arr[j].length; k++) {
+//             console.log(arr[i][j][k])
+//
+//         }
+//
+//     }
+//
+// }
+
+// [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]]
+
+// let arr = []
+// for (let i = 0; i < 5; i++) {
+//     arr[i] = []
+//     for (let j = 1; j < 6; j++) {
+//         arr[i].push(j)
+//     }
+// }
+// console.log(arr)
+// [
+//     ['x', 'x', 'x', 'x'],
+//     ['x', 'x', 'x', 'x'],
+//     ['x', 'x', 'x', 'x']
+// ]
+
+// let arr = []
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 1; j < 5; j++) {
+//         arr[i].push('x')
+//     }
+// }
+// console.log(arr)
+
+// [[[1, 2, 3, 4, 5], [1, 2, 3, 4, 5],],
+//     [
+//         [1, 2, 3, 4, 5],
+//         [1, 2, 3, 4, 5],
+//     ],
+//     [
+//         [1, 2, 3, 4, 5],
+//         [1, 2, 3, 4, 5],
+//     ],
+// ]
+//
+// let arr = []
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 0; j < 2; j++) {
+//         arr[i][j] = []
+//         for (let k = 1; k <= 5; k++) {
+//             arr[i][j].push(k)
+//         }
+//     }
+// }
+// console.log(arr)
+
+// let arr = [];
+//
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = []
+//     for (let j = 1; j <= 5; j++) {
+//         arr[i].push(j);
+//     }
+// }
+//
+// console.log(arr);
+
+// let arr = [];
+//
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = [];
+//
+//     for (let j = 1; j <= 5; j++) {
+//         arr[i].push(j);
+//     }
+// }
+//
+// console.log(arr);
+
+// [[1, 2], [3, 4], [5, 6], [7, 8]]
+
+// [[2, 4, 6], [8, 10, 12], [14, 16, 18], [20, 22, 24]]
+
+// [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+
+// let arr = []
+
+// let k = 0
+// for (let i = 0; i < 4; i++) {
+//     arr[i] = []
+//     for (let j = 0; j < 2; j++) {
+//         arr[i].push(++k)
+//     }
+//
+// }
+// console.log(arr)
+
+// [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+// let arr = [];
+// let k = 1;
+//
+// for (let i = 0; i < 3; i++) {
+//     arr[i] = [];
+//
+//     for (let j = 0; j < 3; j++) {
+//         arr[i][j] = k;
+//         k++;
+//     }
+// }
+//
+// console.log(arr);
+
+let obj = {
+    key1: {
+        key1: 1,
+        key2: 2,
+        key3: 3,
+    },
+    key2: {
+        key1: 4,
+        key2: 5,
+        key3: 6,
+    },
+    key3: {
+        key1: 7,
+        key2: 8,
+        key3: 9,
+    },
 }
