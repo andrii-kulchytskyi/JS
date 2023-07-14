@@ -702,30 +702,100 @@
 
 
 // Найдите сумму элементов приведенного объекта.
+// let obj = {
+//     key1: {
+//         key1: 1,
+//         key2: 2,
+//         key3: 3,
+//     },
+//     key2: {
+//         key1: 4,
+//         key2: 5,
+//         key3: 6,
+//     },
+//     key3: {
+//         key1: 7,
+//         key2: 8,
+//         key3: 9,
+//     },
+// }
+// let total = 0
+//
+// for (const objKey in obj) {
+//     for (const objKeyKey in obj[objKey]) {
+//         total+= obj[objKey][objKeyKey]
+//
+//     }
+//
+// }
+// console.log(total)
+
+// let obj = {
+//     1: {
+//         1: 'a1',
+//         2: 'a2',
+//         3: 'a3',
+//     },
+//     2: {
+//         1: 'b1',
+//         2: 'b2',
+//         3: 'b3',
+//     },
+//     3: {
+//         1: 'c1',
+//         2: 'c2',
+//         3: 'c3',
+//     },
+// }
+// console.log(obj["2"]["3"] )
+
 let obj = {
-    key1: {
-        key1: 1,
-        key2: 2,
-        key3: 3,
+    1: {
+        1: {
+            1: 111,
+            2: 112,
+            3: 113,
+        },
+        2: {
+            1: 121,
+            2: 122,
+            3: 123,
+        },
     },
-    key2: {
-        key1: 4,
-        key2: 5,
-        key3: 6,
+    2: {
+        1: {
+            1: 211,
+            2: 212,
+            3: 213,
+        },
+        2: {
+            1: 221,
+            2: 222,
+            3: 223,
+        },
     },
-    key3: {
-        key1: 7,
-        key2: 8,
-        key3: 9,
+    3: {
+        1: {
+            1: 311,
+            2: 312,
+            3: 313,
+        },
+        2: {
+            1: 321,
+            2: 322,
+            3: 323,
+        },
     },
 }
 let total = 0
 
 for (const objKey in obj) {
     for (const objKeyKey in obj[objKey]) {
-        total+= obj[objKey][objKeyKey]
+        for (const objKeyKeyKey in obj[objKey]) {
+            total+= obj[objKey][objKeyKey][objKeyKeyKey]
+        }
 
     }
-
 }
+
 console.log(total)
