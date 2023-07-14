@@ -700,6 +700,8 @@
 //
 // console.log(arr);
 
+
+// Найдите сумму элементов приведенного объекта.
 let obj = {
     key1: {
         key1: 1,
@@ -717,3 +719,13 @@ let obj = {
         key3: 9,
     },
 }
+let total = 0
+
+for (const objKey in obj) {
+    for (const objKeyKey in obj[objKey]) {
+        total+= obj[objKey][objKeyKey]
+
+    }
+
+}
+console.log(total)
