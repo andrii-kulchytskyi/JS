@@ -787,15 +787,22 @@ let obj = {
         },
     },
 }
-let total = 0
+// let total = 0
+//
+// for (const objKey in obj) {
+//     for (const objKeyKey in obj[objKey]) {
+//         for (const objKeyKeyKey in obj[objKey]) {
+//             total+= obj[objKey][objKeyKey][objKeyKeyKey]
+//         }
+//
+//     }
+// }
+//
+// console.log(total)
+let students = {
+    'group1': ['name11', 'name12', 'name13'],
+    'group2': ['name21', 'name22', 'name23'],
+    'group3': ['name31', 'name32', 'name33'],
+};
 
-for (const objKey in obj) {
-    for (const objKeyKey in obj[objKey]) {
-        for (const objKeyKeyKey in obj[objKey]) {
-            total+= obj[objKey][objKeyKey][objKeyKeyKey]
-        }
-
-    }
-}
-
-console.log(total)
+console.log(students.group3[0])
