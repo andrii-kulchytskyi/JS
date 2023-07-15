@@ -799,10 +799,63 @@ let obj = {
 // }
 //
 // console.log(total)
-let students = {
-    'group1': ['name11', 'name12', 'name13'],
-    'group2': ['name21', 'name22', 'name23'],
-    'group3': ['name31', 'name32', 'name33'],
-};
+// let students = {
+//     'group1': ['name11', 'name12', 'name13'],
+//     'group2': ['name21', 'name22', 'name23'],
+//     'group3': ['name31', 'name32', 'name33'],
+// };
+//
+// console.log(students.group3[0])
 
-console.log(students.group3[0])
+// let data = {
+//     1: [
+//         'data11',
+//         'data12',
+//         'data13',
+//     ],
+//     2: [
+//         'data21',
+//         'data22',
+//         'data23',
+//     ],
+//     3: [
+//         'data31',
+//         'data32',
+//         'data33',
+//     ],
+//     4: [
+//         'data41',
+//         'data42',
+//         'data43',
+//     ],
+// };
+//
+// for (const dataKey in data) {
+//     for (const dataKeyElement of data[dataKey]) {
+//         console.log(dataKeyElement)
+//     }
+// }
+
+let data = [
+    {
+        1: 'data11',
+        2: 'data12',
+        3: 'data13',
+    },
+    {
+        1: 'data21',
+        2: 'data22',
+        3: 'data33',
+    },
+    {
+        1: 'data31',
+        2: 'data32',
+        3: 'data33',
+    },
+];
+
+for (const dataKey in data) {
+    for (const dataKeyKey in data[dataKey]) {
+        console.log(data[dataKey][dataKeyKey])
+    }
+}
