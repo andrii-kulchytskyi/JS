@@ -1144,3 +1144,130 @@
 
 // Даны переменные a и b. Найдите модуль разности a и b.
 //     Проверьте работу скрипта самостоятельно для различных a и b.
+// let a = 5
+// let b = 8
+// console.log(Math.abs(b-a))
+//
+// let str = 'aaAa'
+//
+// console.log(str.toUpperCase())
+// console.log(str.toLowerCase())
+// Write function parseF which takes an input and returns a number or null if conversion is not possible.
+//     The input can be one of many different types so be aware.
+// function parseF(s) {
+//
+//     return isNaN(parseFloat(s)) ? null : parseFloat(s);
+// }
+
+// Дана строка 'я учу javascript!'. Вырежьте из нее слово 'учу' и слово 'javascript'
+// тремя разными способами (через substr, substring, slice).
+
+// let str = 'я учу javascript!'
+// console.log(str.slice(2,6))
+// console.log(str.substring(2,6))
+// console.log(str.substr(2,3))
+
+// №1⊗jsPmSMSS
+//
+// Дана строка. Проверьте, начинается ли эта строка на 'http://'.
+//
+// №2⊗jsPmSMSS
+//
+// Дана строка. Проверьте, заканчивается ли эта строка на '.html'.
+
+// let str = 'http://';
+// let str1 = 'ddasdas.html';
+// console.log(str1.endsWith('.html'))
+
+// №1⊗jsPmSMSRe
+//
+// Дана строка '1-2-3-4-5'. Поменяйте все дефисы на точки.
+
+// let stringd = '1-2-3-4-5';
+// while(stringd.includes('-')){
+//     stringd = stringd.replace('-','.')
+// }
+// console.log(stringd)
+
+// №1⊗jsPmSMSP
+//
+// Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива.
+//
+// let str = '1-2-3-4-5'
+// let arr = str.split('-')
+// console.log(arr)
+// №2⊗jsPmSMSP
+//
+// Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+//
+
+// let stre = '12345'
+// let arr = stre.split('')
+//
+// console.log(arr)
+// №3⊗jsPmSMSP
+//
+// Дан следующий массив:
+//
+// let arr = [1, 2, 3, 4, 5];
+// // С помощью метода join слейте его в строку '1-2-3-4-5'.
+// let s = arr.join('-')
+// console.log(s)
+
+// №1⊗jsPmSMBE
+//
+// Дан следующий массив:
+//
+//   let arr =   [1, 2, 3]
+// let firstElement = arr.shift()
+// console.log( firstElement)
+// Выведите на экран первый элемент этого массива.
+//
+// №2⊗jsPmSMBE
+//
+// Дан следующий массив:
+//
+//     [1, 2, 3]
+// Выведите на экран последний элемент этого массива.
+//
+//   let arr =   [1, 2, 3]
+// let firstElement = arr.pop()
+// console.log( firstElement)
+// №3⊗jsPmSMBE
+//
+// Дан следующий массив:
+//
+//     [1, 2, 3]
+// Добавьте ему в конец элементы 4, 5, 6.
+// let arr =   [1, 2, 3]
+// let f = arr.push(4,5,6)
+// console.log( arr)
+//
+// №4⊗jsPmSMBE
+//
+// Дан следующий массив:
+//
+//     [1, 2, 3]
+// Добавьте ему в начало элементы 4, 5, 6.
+
+// let arr = [1,2,3]
+// arr.unshift(4,5,6)
+// console.log(arr)
+
+// №1⊗jsPmSMAP
+//
+// Дан следующий массив:
+//
+  let arr =   [1, 2, 3, 4, 5]
+
+// Сделайте из этого массива следующий:
+//
+//     [1, 2, 3]
+// №2⊗jsPmSMAP
+//
+// Дан следующий массив:
+//
+//     [1, 2, 3, 4, 5]
+// Используя этот массив, запишите в новую переменную следующий массив:
+//
+//     [4, 5]
