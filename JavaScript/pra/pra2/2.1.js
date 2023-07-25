@@ -1504,3 +1504,105 @@
 //     return (a+1)/(p*p)%1===0
 // }
 
+// function func(num) {
+//     let sum = 0;
+//
+//     for (let i = 1; i <= num; i++) {
+//         sum += i;
+//         return sum;
+//     }
+// }
+//
+// console.log( func(5) );
+
+// Напишите функцию, которая параметром будет принимать число и делить его на 2 столько раз,
+//     пока результат не станет меньше 10.
+// Пусть функция возвращает количество итераций, которое потребовалось для достижения результата.
+
+// function func(n) {
+//     let result = 0
+//     for (let i = 0; i < n; i++) {
+//         result = result /n
+//         if (result < 10) {
+//             return result
+//         }
+//     }
+// }
+//
+//
+// console.log(func(500))
+
+// Напишите функцию, которая параметром будет принимать число и делить его на 2 столько раз, пока результат не станет меньше
+// 10. Пусть функция возвращает количество итераций, которое потребовалось для достижения результата.
+
+// function func(n) {
+//     let result = 0
+//     for (let i = 0; i < n; i++) {
+//         result = result /n
+//         if (result < 10) {
+//             return result
+//         }
+//     }
+//
+// }
+//
+// function func(num1, num2) {
+//
+//     if (num1 > 0 && num2 > 0) {
+//         return num1 * num2;
+//     } else {
+//         return num1 - num2;
+//     }
+//
+// }
+//
+// console.log(func(3, 4));
+//
+// function func(num1, num2) {
+//     let res;
+//
+//     if (num1 > 0 && num2 > 0) {
+//         res = num1 * num2;
+//     } else {
+//         res = num1 - num2;
+//     }
+//
+//     return res;
+// }
+//
+// console.log(func(3, 4));
+
+// №1⊗jsPmFBFl
+//
+// Сделайте функцию, которая параметром будет принимать массив с числами, и проверять, что все элементы в этом массиве
+// являются четными числами.
+
+// function func(arr) {
+//     for (let arrElement of arr) {
+//        return arr[arrElement] % 2 === 0
+//     }
+// }
+
+
+//
+// №2⊗jsPmFBFl
+//
+// Сделайте функцию, которая параметром будет принимать число и проверять, что все цифры это числа являются нечетными.
+
+function allDigitsOdd(number) {
+    const digits = number.toString();
+    for (let i = 0; i < digits.length; i++) {
+        const digit = Number(digits[i]);
+        if (digit % 2 === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(allDigitsOdd(11))
+//
+// №3⊗jsPmFBFl
+//
+// Сделайте функцию, которая параметром будет принимать массив и проверять, есть ли в этом массиве два одинаковых
+// элемента подряд.
