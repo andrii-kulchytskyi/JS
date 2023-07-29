@@ -1589,20 +1589,21 @@
 //
 // Сделайте функцию, которая параметром будет принимать число и проверять, что все цифры это числа являются нечетными.
 
-function allDigitsOdd(number) {
-    const digits = number.toString();
-    for (let i = 0; i < digits.length; i++) {
-        const digit = Number(digits[i]);
-        if (digit % 2 === 0) {
-            return false;
-        }
-    }
-    return true;
-}
-
-console.log(allDigitsOdd(11))
+// function allDigitsOdd(number) {
+//     const digits = number.toString();
+//     for (let i = 0; i < digits.length; i++) {
+//         const digit = Number(digits[i]);
+//         if (digit % 2 === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+//
+// console.log(allDigitsOdd(11))
 //
 // №3⊗jsPmFBFl
 //
 // Сделайте функцию, которая параметром будет принимать массив и проверять, есть ли в этом массиве два одинаковых
 // элемента подряд.
+
