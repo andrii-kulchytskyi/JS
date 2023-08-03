@@ -1718,9 +1718,13 @@
 //
 // Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву этой строки.
 
-function f() {
-
+function f(s) {
+    return s[0].toUpperCase() + s.slice(1)
 }
+
+console.log(f('sdasdas'))
+
+// №6⊗jsPmFBPrm
 //
 // №6⊗jsPmFBPrm
 //
