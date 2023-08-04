@@ -1718,11 +1718,11 @@
 //
 // Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву этой строки.
 
-function f(s) {
-    return s[0].toUpperCase() + s.slice(1)
-}
-
-console.log(f('sdasdas'))
+// function f(s) {
+//     return s[0].toUpperCase() + s.slice(1)
+// }
+//
+// console.log(f('sdasdas'))
 
 // №6⊗jsPmFBPrm
 //
@@ -1730,30 +1730,86 @@ console.log(f('sdasdas'))
 //
 // Сделайте функцию, которая параметром будет принимать строку и делать заглавной первую букву каждого слова этой строки.
 //
+// function f(s) {
+//     return s[0].toUpperCase() + s.slice(1)
+// }
+
 // №7⊗jsPmFBPrm
 //
 // Сделайте функцию, заполняющую массив целыми числами от 1 до заданного.
+
+// function f(num) {
+//     let arr = []
+//     for (let i = 1; i < num; i++) {
+//         arr.push(i)
+//     }
+//     return arr
+// }
+
 //
 // №8⊗jsPmFBPrm
 //
 // Сделайте функцию, которая параметром будет принимать число и возвращать сумму его цифр.
+// function f(number) {
+//     let sum = 0
+//     let str = number.toString()
+//     for (let i = 0; i < str.length; i++) {
+//         sum += +str[i]
+//     }
+//     return sum
+// }
+//
+// console.log(f(33))
+
 //
 // №9⊗jsPmFBPrm
 //
 // Сделайте функцию, которая параметром будет год и проверять, високосный он или нет.
+
+// function f(year) {
+//     if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+//         return true
+//     }
+//     return false
+// }
+//
+// console.log(f(2024))
+
 //
 // №10⊗jsPmFBPrm
 //
 // Сделайте функцию, которая параметром будет принимать секунды, а возвращать количество суток, соответствующих этим секундам.
+// function f(s) {
+//     return s/86400
+// }
+//
+// console.log(f(86400))
+
 //
 // №11⊗jsPmFBPrm
 //
 // Сделайте функцию, которая будет возвращать случайный элемент из массива.
+// function f(arr) {
+//     return arr[Math.floor((Math.random() * arr.length))]
+// }
+//
+// console.log(f([1,2,3,4,5]))
+
 //
 // №12⊗jsPmFBPrm
 //
 // Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
 
+function f(number) {
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(f(7))
 
 
 
