@@ -1800,16 +1800,31 @@
 //
 // Сделайте функцию, которая параметром будет принимать число и проверять, простое оно или нет.
 
-function f(number) {
-    for (let i = 2; i <= Math.sqrt(number); i++) {
-        if (number % i === 0) {
-            return false
-        }
-    }
-    return true
+// function f(number) {
+//     for (let i = 2; i <= Math.sqrt(number); i++) {
+//         if (number % i === 0) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+//
+// console.log(f(7))
+
+// let num = 1;
+//
+// function func() {
+//     console.log(num);
+// }
+//
+// num = 2;
+// func();
+
+function func() {
+    let num = 5;
+    return num;
 }
 
-console.log(f(7))
-
+console.log(func());
 
 
