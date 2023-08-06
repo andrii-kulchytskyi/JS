@@ -1820,11 +1820,107 @@
 // num = 2;
 // func();
 
-function func() {
-    let num = 5;
-    return num;
+// function func() {
+//     let num = 5;
+//     return num;
+// }
+//
+// console.log(func());
+// №1⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+
+//     let num = 1;
+//
+// function func() {
+//     num = 2;
+// }
+// func();
+//
+// console.log(num);
+// №2⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     let num = 1;
+//
+// function func() {
+//     num = 2;
+// }
+//
+// console.log(num);
+// №3⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     let num = 1;
+//
+// function func() {
+//     let num = 2;
+// }
+// func();
+//
+// console.log(num);
+// №4⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     let num = 1;
+//
+// function func() {
+//     let num = 2;
+// }
+//
+// console.log(num);
+// func();
+// №5⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     let num = 1;
+//
+// function func() {
+//     num = 2;
+// }
+//
+// console.log(num);
+// func();
+// №6⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     let num = 1;
+//
+// function func() {
+//     num++;
+// }
+//
+// func();
+// func();
+// func();
+// console.log(num);
+// №7⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function func() {
+//         num = 2;
+//     }
+//
+// let num = 1;
+// console.log(num);
+// func();
+// №8⊗jsPmFVGVCh
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+let num = 1;
+
+function func(localNum) {
+    console.log(localNum);
 }
 
-console.log(func());
+num = 2;
+func(num);
 
 
