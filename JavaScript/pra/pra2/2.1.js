@@ -1914,13 +1914,29 @@
 //
 // Определите, не запуская код, что выведется в консоль:
 //
-let num = 1;
+// function func() {
+//     let num = 2;
+// }
+//
+// let num = 1;
+// func();
+// console.log(num);
 
-function func(localNum) {
-    console.log(localNum);
+
+// Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers, so, for example:
+
+
+function multiply(number) {
+    let num = number.toString()
+    let res = 1
+    for (let i = 0; i < num.length; i++) {
+        res *= 5
+    }
+    if (num.length === 1) {
+        res = 5
+    }
+    if(num<0){
+        res = -res
+    }
+    return number * res
 }
-
-num = 2;
-func(num);
-
-
