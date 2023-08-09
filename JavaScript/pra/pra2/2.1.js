@@ -1926,17 +1926,38 @@
 // Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers, so, for example:
 
 
-function multiply(number) {
-    let num = number.toString()
-    let res = 1
-    for (let i = 0; i < num.length; i++) {
-        res *= 5
-    }
-    if (num.length === 1) {
-        res = 5
-    }
-    if(num<0){
-        res = -res
-    }
-    return number * res
-}
+// function multiply(number) {
+//     let num = number.toString()
+//     let res = 1
+//     for (let i = 0; i < num.length; i++) {
+//         res *= 5
+//     }
+//     if (num.length === 1) {
+//         res = 5
+//     }
+//     if(num<0){
+//         res = -res
+//     }
+//     return number * res
+// }
+// function func() {
+//     return '!';
+// }
+//
+// console.log(func); // увидим код функции
+
+№1⊗jsPmFTFAV
+
+Сделайте функцию func, которая будет возвращать через return какую-либо строку.
+
+№2⊗jsPmFTFAV
+
+Выведите результат работы функции func в консоль.
+
+№3⊗jsPmFTFAV
+
+Выведите исходный код функции func в консоль.
+
+№4⊗jsPmFTFAV
+
+Запишите в переменную func число 123, тем самым затерев функцию из этой переменной. Выведите новое значение переменной func в консоль.
