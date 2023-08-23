@@ -2176,13 +2176,112 @@
 
 // Пусть функция test первым параметром принимает число, а вторым и третьим параметрами - функции, также параметром принимающие числа. Пусть функция test возвращает сумму результатов переданных функций:
 //
-function test(num, func1, func2) {
-    return func1(num) + func2(num);
-}
+// function test(num, func1, func2) {
+//     return func1(num) + func2(num);
+// }
+//
+// // Вызовите функцию test, первым параметром передав число 3, вторым параметром функцию, возводящую число в квадрат, а третьим - функцию, возводящую число в куб. Выведите результат работы в консоль.
+// console.log(test(3, function (num) {
+//     return num * num
+// }, function (num) {
+//     return num * num * num
+// }))
 
-// Вызовите функцию test, первым параметром передав число 3, вторым параметром функцию, возводящую число в квадрат, а третьим - функцию, возводящую число в куб. Выведите результат работы в консоль.
-console.log(test(3, function (num) {
-    return num * num
-}, function (num) {
-    return num * num * num
-}))
+// №1⊗jsPmFNPFA
+//
+// Не подсматривая в мой код реализуйте такую же функцию test самостоятельно.
+//
+
+// function test(arr,func) {
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = func(arr[i])
+//     }
+//     return arr
+// }
+//
+// let res = test([1,2,3], function (num) {
+//     return num*num*num
+// })
+// console.log(res)
+// // №2⊗jsPmFNPFA
+// //
+// // Вызовите созданную вами функцию test, передав ей параметром массив с числами. Сделайте так, чтобы функция вернула массив с кубами этих чисел.
+
+// Сделайте функцию func, которая параметрами будет принимать два числа, а возвращать сумму квадрата первого числа с кубом
+// второго числа. Сделайте для этого вспомогательную функцию square, возводящую число в квадрат, и вспомогательную функцию cube, возводящую число в куб.
+
+// function sq(num) {
+//     return Math.pow(num, 2)
+// }
+//
+// function cu(num) {
+//     return Math.pow(num, 3)
+// }
+//
+// function func(a, b) {
+//     return sq(a) + sq(b) + cu(a) + cu(b)
+// }
+//
+// console.log(func(1, 1))
+
+
+// №1⊗jsPmFNIFS
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+    function test() {
+        let num = 1;
+
+        function func() {
+            console.log(num);
+        }
+
+        func();
+    }
+
+test();
+// №2⊗jsPmFNIFS
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num = 1;
+//
+//         function func() {
+//             console.log(num);
+//         }
+//     }
+//
+// test();
+// №3⊗jsPmFNIFS
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num = 1;
+//
+//         function func() {
+//             console.log(num);
+//         }
+//
+//         func();
+//     }
+// №4⊗jsPmFNIFS
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num;
+//
+//         function func() {
+//             console.log(num);
+//         }
+//
+//         num = 1
+//         func();
+//
+//         num = 2
+//         func();
+//     }
+//
+// test();
