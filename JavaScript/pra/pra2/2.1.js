@@ -2229,17 +2229,17 @@
 //
 // Определите, не запуская код, что выведется в консоль:
 //
-    function test() {
-        let num = 1;
-
-        function func() {
-            console.log(num);
-        }
-
-        func();
-    }
-
-test();
+//     function test() {
+//         let num = 1;
+//
+//         function func() {
+//             console.log(num);
+//         }
+//
+//         func();
+//     }
+//
+// test();
 // №2⊗jsPmFNIFS
 //
 // Определите, не запуская код, что выведется в консоль:
@@ -2285,3 +2285,31 @@ test();
 //     }
 //
 // test();
+//
+// №1⊗jsPmFNOFP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num1, num2) {
+//         function func() {
+//             console.log(num1 + num2);
+//         }
+//
+//         func();
+//     }
+//
+// test(1, 2);
+// №2⊗jsPmFNOFP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+    function test(num1, num2) {
+        function func() {
+            console.log(num1 + num2);
+        }
+
+        num1 = 2;
+        func();
+    }
+
+test(1, 2);
