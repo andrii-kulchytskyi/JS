@@ -2303,13 +2303,91 @@
 //
 // Определите, не запуская код, что выведется в консоль:
 //
-    function test(num1, num2) {
-        function func() {
-            console.log(num1 + num2);
-        }
+//     function test(num1, num2) {
+//         function func() {
+//             console.log(num1 + num2);
+//         }
+//
+//         num1 = 2;
+//         func();
+//     }
+//
+// test(1, 2);
 
-        num1 = 2;
-        func();
-    }
+// function test(num) {
+//     function func(localNum) {
+//         num = 2;
+//     }
+//
+//     func(num);
+//     console.log(num);
+// }
+//
+// test(1);
 
-test(1, 2);
+// function test(num) {
+//     function func(localNum) {
+//         num = 2;
+//     }
+//
+//     func(num);
+//     console.log(num);
+// }
+//
+// test(1);
+
+// №1⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         func(num);
+//     }
+//
+// test(1);
+// №2⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             num = 2;
+//         }
+//
+//         func(num);
+//         console.log(num);
+//     }
+//
+// test(1);
+// №3⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         num = 2;
+//         func(num);
+//     }
+//
+// test(1);
+// №4⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         func(num);
+//         num = 2;
+//     }
+//
+// test(1);
