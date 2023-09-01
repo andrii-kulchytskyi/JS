@@ -2391,3 +2391,65 @@
 //     }
 //
 // test(1);
+
+// №1⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         func(num);
+//     }
+//
+// test(1);
+// №2⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             num = 2;
+//         }
+//
+//         func(num);
+//         console.log(num);
+//     }
+//
+// test(1);
+// №3⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         num = 2;
+//         func(num);
+//     }
+//
+// test(1);
+// №4⊗jsPmFNSNP
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test(num) {
+//         function func(num) {
+//             console.log(num);
+//         }
+//
+//         func(num);
+//         num = 2;
+//     }
+//
+// test(1);
+
+
+// №1⊗jsPmFNFRF
+//
+// Сделайте функцию func1, которая будучи вызвана вот так: func1()(), вернет число 1.
+// Сделайте аналогичную функцию func2, возвращающую число 2. Найдите сумму результатов этих функций.
