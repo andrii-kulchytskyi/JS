@@ -2485,3 +2485,151 @@
 // }
 //
 // console.log(f()()()()())
+
+
+// №1⊗jsPmFNRFP
+//
+// Сделайте функцию func, которая будучи вызвана вот так: func(2)(3)(4),
+//     вернет сумму переданных в параметры чисел.
+
+// function f(num1) {
+//     return function (num2) {
+//         return function (num3) {
+//             return num1 + num2 + num3
+//         }
+//     }
+// }
+//
+// console.log(f(2)(3)(4))
+
+//
+// №2⊗jsPmFNRFP
+//
+// Сделайте функцию func, которая будучи вызвана вот так: func(2)(3)(4)(5)(),
+//     вернет массив переданных в параметры чисел.
+
+// function fun(num1) {
+//     return function (num2) {
+//         return function (num3) {
+//             return function (num4) {
+//                 return function () {
+//                     return [num1, num2, num3, num4]
+//                 }
+//             }
+//         }
+//     }
+// }
+//
+// console.log(fun(2)(3)(4)(5)())
+
+// №1⊗jsPmFNClb
+//
+// Дан массив с числами. С помощью созданной нами функции each увеличьте каждый элемент в два раза.
+// function each(arr, callback) {
+//     let result = []
+//     for (const arrKey in arr) {
+//         result.push(callback(arr[arrKey]))
+//     }
+//     return result
+// }
+
+// console.log(each([1, 2, 3, 4], function (elem) {
+//     return elem * 2
+// }))
+
+//
+// №2⊗jsPmFNClb
+//
+// Дан массив со строками. С помощью созданной нами функции each переверните символы каждой строки в обратном порядке.
+// console.log(each(['144', '2342', '3432'], function (elem) {
+//     return elem.split('').reverse().join('')
+// }))
+//
+// //
+// // №3⊗jsPmFNClb
+// //
+// // Дан массив со строками. С помощью созданной нами функции each сделайте заглавным первый символ каждой строки.
+//
+// console.log(each(['dsads', 'fgdfgfd', 'fsdfsdgdf'], function (elem) {
+//     return elem[0].toUpperCase()+elem.slice(1)
+// }))
+
+// function cube(num) {
+//     return num ** 3;
+// }
+//
+// console.log(each([1, 2, 3, 4], cube))
+//
+// №1⊗jsPmFNAFA
+//
+// Дана следующая функция с коллбэком:
+//
+// let result = every([1, 2, 3, 4, 5], elem => elem > 0)
+// ;
+// Упростите коллбэк через стрелочную функцию.
+//
+// №2⊗jsPmFNAFA
+//
+// Дана следующая функция с коллбэком:
+//
+// let result = every([1, 2, 3, 4, 5], (elem, index) => elem * index > 10);
+// Упростите коллбэк через стрелочную функцию.
+//
+// №3⊗jsPmFNAFA
+//
+// Дана следующая функция с коллбэком:
+//
+// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// let result = each(arr, (elem, index) => elem * index > 10);
+// Упростите коллбэк через стрелочную функцию.
+
+// №1⊗jsPmClLEA
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+
+// №2⊗jsPmClLEA
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num1 = 1;
+//         let num2 = 2;
+//
+//         return function() {
+//             return num1 + num2;
+//         }
+//     }
+//
+// console.log(test()());
+// №3⊗jsPmClLEA
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num1 = 1;
+//
+//         return function() {
+//             return num1 + num2;
+//         }
+//     }
+//
+// let num2 = 2;
+// let func = test();
+// console.log(func());
+// №4⊗jsPmClLEA
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function test() {
+//         let num = 1;
+//
+//         return function() {
+//             return num;
+//         }
+//     }
+//
+// let num = 2;
+// let func = test();
+// console.log(func());
