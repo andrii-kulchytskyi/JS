@@ -2641,32 +2641,68 @@ res()
 // Пусть функция в замыкании хранит число 10. Сделайте так, чтобы каждый вызов функции уменьшал это
 // число на 1 и выводил в консоль уменьшенное число.
 
-function f1() {
-    let num = 10
-    return function () {
-        console.log(num)
-        num--
-        if (num < 0) {
-            console.log('Done')
-        }
-    }
-}
-
-let result = f1()
-result()
-result()
-result()
-result()
-result()
-result()
-result()
-result()
-result()
-result()
-result()
+// function f1() {
+//     let num = 10
+//     return function () {
+//         console.log(num)
+//         num--
+//         if (num < 0) {
+//             console.log('Done')
+//         }
+//     }
+// }
+//
+// let result = f1()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
+// result()
 
 //
 // №3⊗jsPmClCr
 //
 // Модифицируйте предыдущую задачу так, чтобы отсчет доходил до 0, а
 // затем каждый последующий вызов функции выводил в консоль сообщение о том, что отсчет окончен.
+
+//
+// №1⊗jsPmClCNL
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function func() {
+//         let num = 0;
+//
+//         return function() {
+//             console.log(num);
+//             num++;
+//         };
+//     }
+//
+// func()();
+// func()();
+// func()();
+// №2⊗jsPmClCNL
+//
+// Определите, не запуская код, что выведется в консоль:
+//
+//     function func() {
+//         let num = 0;
+//
+//         return function() {
+//             console.log(num);
+//             num++;
+//         };
+//     }
+//
+// let test = func;
+//
+// test()();
+// test()();
+// test()();
