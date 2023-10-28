@@ -2,15 +2,11 @@
 //
 // Переделайте следующий код через деструктуризацию согласно изученной теории:
 //
-//     function func(employee) {
-//         let name       = employee[0];
-//         let surname    = employee[1];
-//         let department = employee[2];
-//         let position   = employee[3];
-//         let salary     = employee[4];
-//     }
+// function func([name, surname, department, position, salary]) {
 //
-// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+// }
+//
+// func(['John', 'Smit', 'development', 'programmer', 2000]);
 // №2⊗jsPmDstFP
 //
 // Переделайте следующий код через деструктуризацию согласно изученной теории:
